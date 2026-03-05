@@ -1,16 +1,15 @@
 # masjid-al-mujahidin
-<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Display Masjid Al-Ikhlas</title>
+<title>Display Masjid Al-Mujahidin</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Nunito:wght@400;600;700;800;900&family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;600;700;900&family=Montserrat:wght@400;600;700;800;900&family=Merriweather:wght@400;700;900&family=Cinzel:wght@400;600;700;900&family=Poppins:wght@400;600;700;800;900&family=Oswald:wght@400;600;700&family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Nunito',sans-serif;background:#111;width:100vw;height:100vh;overflow:hidden;}
 .screen{width:100vw;height:100vh;position:relative;display:flex;flex-direction:column;overflow:hidden;}
-.mosque-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=1920&q=80') center/cover no-repeat;z-index:0;transition:background-image 1s;}
+.mosque-bg{position:absolute;inset:0;background:url('https://www.ventour.co.id/wp-content/uploads/2024/09/wp4749116-1024x576.jpg') center/cover no-repeat;z-index:0;transition:background-image 1s;}
 .mosque-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.22) 28%,rgba(0,0,0,0.04) 65%,transparent 80%);}
 
 /* TOP BAR */
@@ -893,7 +892,7 @@ input[type=file].qr-input{display:none;}
     </div>
     <div class="top-masjid">
       <div class="ornament-line"><div class="minaret"></div><div class="minaret tall"></div><div class="minaret"></div></div>
-      <div class="masjid-name-text"><span class="icon">🕌</span><span id="nama-masjid" data-text="Masjid Al-Ikhlas">Masjid Al-Ikhlas</span></div>
+      <div class="masjid-name-text"><span class="icon">🕌</span><span id="nama-masjid" data-text="Masjid Al-Mujahidin">Masjid Al-Mujahidin</span></div>
       <div class="masjid-address" id="alamat-masjid">Jl. Masjid Raya No. 12, Pasarkemis, Kab. Tangerang</div>
     </div>
     <div class="top-date">
@@ -951,7 +950,7 @@ input[type=file].qr-input{display:none;}
             <div class="qr-slot"><label for="qr3"><div class="qr-img-wrap"><img id="qr-img-3" alt=""><div class="qr-placeholder" id="qr-ph-3"><span class="qr-icon">➕</span><span class="qr-hint">KLIK UPLOAD<br>LAINNYA</span></div></div></label><input type="file" class="qr-input" id="qr3" accept="image/*" onchange="loadQR(this,'qr-img-3','qr-ph-3')"><div class="qr-bank" id="qr-label-3">Lainnya</div><div class="qr-no">Custom</div></div>
           </div>
           <div class="bc-sep"></div>
-          <div class="barcode-rekening"><div class="rek-title">📋 Rekening</div><div class="rek-item"><span class="rek-bank-badge rek-bsi">BSI</span><div><div class="rek-nomor" id="rek-bsi-no">7123 4567 89</div><div class="rek-nama" id="rek-bsi-nm">Masjid Al-Ikhlas</div></div></div><div class="rek-item"><span class="rek-bank-badge rek-btn">BTN</span><div><div class="rek-nomor" id="rek-btn-no">00125-01-5678-9</div><div class="rek-nama" id="rek-btn-nm">Masjid Al-Ikhlas</div></div></div></div>
+          <div class="barcode-rekening"><div class="rek-title">📋 Rekening</div><div class="rek-item"><span class="rek-bank-badge rek-bsi">BSI</span><div><div class="rek-nomor" id="rek-bsi-no">7123 4567 89</div><div class="rek-nama" id="rek-bsi-nm">Masjid Al-Mujahidin</div></div></div><div class="rek-item"><span class="rek-bank-badge rek-btn">BTN</span><div><div class="rek-nomor" id="rek-btn-no">00125-01-5678-9</div><div class="rek-nama" id="rek-btn-nm">Masjid Al-Mujahidin</div></div></div></div>
         </div>
       </div>
       <!-- SLIDE KAS -->
@@ -1458,11 +1457,11 @@ input[type=file].qr-input{display:none;}
 // ═══════════════════════════════════════════════════
 // DEFAULT DATA
 // ═══════════════════════════════════════════════════
-const DEF_TICKERS=[{id:1,text:"Selamat datang di Masjid Al-Ikhlas",emoji:"🕌",active:true},{id:2,text:"Kajian Ahad pagi pukul 07.00 WIB bersama Ust. Abdul Hakim, Lc.",emoji:"📢",active:true},{id:3,text:"Donasi renovasi masjid masih dibuka — Jazakumullahu khairan",emoji:"💚",active:true},{id:4,text:"TPQ Al-Ikhlas menerima santri baru usia 5–15 tahun",emoji:"📖",active:true},{id:5,text:"Mari memakmurkan masjid dengan sholat berjamaah",emoji:"☪️",active:true},{id:6,text:"Ramadan 1447 H — Menghitung Hari",emoji:"🌙",active:true}];
+const DEF_TICKERS=[{id:1,text:"Selamat datang di Masjid Al-Mujahidin",emoji:"🕌",active:true},{id:2,text:"Kajian Ahad pagi pukul 07.00 WIB bersama Ust. Abdul Hakim, Lc.",emoji:"📢",active:true},{id:3,text:"Donasi renovasi masjid masih dibuka — Jazakumullahu khairan",emoji:"💚",active:true},{id:4,text:"TPQ Al-Mujahidin menerima santri baru usia 5–15 tahun",emoji:"📖",active:true},{id:5,text:"Mari memakmurkan masjid dengan sholat berjamaah",emoji:"☪️",active:true},{id:6,text:"Ramadan 1447 H — Menghitung Hari",emoji:"🌙",active:true}];
 const DEF_HADIST=[{id:1,arabic:"إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ",text:"Sesungguhnya setiap amalan tergantung pada niatnya. Setiap orang akan mendapatkan apa yang ia niatkan.",source:"HR. Bukhari No. 1 & Muslim No. 1907",cat:"featured",active:true},{id:2,arabic:"الْمُسْلِمُ أَخُو الْمُسْلِمِ لَا يَظْلِمُهُ وَلَا يُسْلِمُهُ",text:"Seorang muslim adalah saudara bagi muslim lainnya. Ia tidak menzaliminya dan tidak membiarkannya dalam kesulitan.",source:"HR. Bukhari No. 2442",cat:"normal",active:true},{id:3,arabic:"مَنْ بَنَى مَسْجِداً لِلَّهِ بَنَى اللَّهُ لَهُ بَيْتاً فِي الْجَنَّةِ",text:"Barangsiapa membangun masjid karena Allah, niscaya Allah akan membangunkan untuknya sebuah rumah di surga.",source:"HR. Bukhari No. 450 & Muslim No. 533",cat:"featured",active:true},{id:4,arabic:"خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ",text:"Sebaik-baik kalian adalah orang yang mempelajari Al-Qur'an dan mengajarkannya kepada orang lain.",source:"HR. Bukhari No. 5027",cat:"normal",active:true},{id:5,arabic:"لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",text:"Tidak beriman salah seorang di antara kalian, sehingga ia mencintai saudaranya sebagaimana ia mencintai dirinya sendiri.",source:"HR. Bukhari No. 13 & Muslim No. 45",cat:"normal",active:true}];
 const COLORS={hijau:"linear-gradient(90deg,#0f3d22,#1a6b3c,#0f3d22)",biru:"linear-gradient(90deg,#1a237e,#283593,#1a237e)",ungu:"linear-gradient(90deg,#6a1b9a,#7b1fa2,#6a1b9a)",merah:"linear-gradient(90deg,#b71c1c,#c62828,#b71c1c)",hitam:"linear-gradient(90deg,#111,#333,#111)"};
 const FSIZES={kecil:"0.74rem",sedang:"0.85rem",besar:"1rem"};
-let cfg={nama:"Masjid Al-Ikhlas",alamat:"Jl. Masjid Raya No. 12, Pasarkemis, Kab. Tangerang",haribesar:"",bg:"",fontMasjid:"Nunito",sholat:{imsak:"04:16",subuh:"04:26",syuruq:"05:50",dzuhur:"12:03",ashar:"15:03",maghrib:"17:58",isya:"18:59"},iqamah:{subuh:"04:36",dzuhur:"12:13",ashar:"15:13",maghrib:"18:03",isya:"19:05"},durasiIqamah:{subuh:10,dzuhur:10,ashar:10,maghrib:10,isya:10},mode:"muadzin",rekening:{bsiNo:"7123 4567 89",bsiNm:"Masjid Al-Ikhlas",btnNo:"00125-01-5678-9",btnNm:"Masjid Al-Ikhlas"},ticker:{items:[...DEF_TICKERS],color:"hijau",speed:50,fontSize:"sedang",sep:" | ",showLabel:true,paused:false,nextId:7},hadist:{items:[...DEF_HADIST],visible:true,rotateInterval:60,nextId:6},gps:{lat:null,lng:null,city:"",kecamatan:"",lastFetch:""}};
+let cfg={nama:"Masjid Al-Mujahidin",alamat:"Jl. Masjid Raya No. 12, Pasarkemis, Kab. Tangerang",haribesar:"",bg:"",fontMasjid:"Nunito",sholat:{imsak:"04:16",subuh:"04:26",syuruq:"05:50",dzuhur:"12:03",ashar:"15:03",maghrib:"17:58",isya:"18:59"},iqamah:{subuh:"04:36",dzuhur:"12:13",ashar:"15:13",maghrib:"18:03",isya:"19:05"},durasiIqamah:{subuh:10,dzuhur:10,ashar:10,maghrib:10,isya:10},mode:"muadzin",rekening:{bsiNo:"7123 4567 89",bsiNm:"Masjid Al-Mujahidin",btnNo:"00125-01-5678-9",btnNm:"Masjid Al-Mujahidin"},ticker:{items:[...DEF_TICKERS],color:"hijau",speed:50,fontSize:"sedang",sep:" | ",showLabel:true,paused:false,nextId:7},hadist:{items:[...DEF_HADIST],visible:true,rotateInterval:60,nextId:6},gps:{lat:null,lng:null,city:"",kecamatan:"",lastFetch:""}};
 try{const s=localStorage.getItem("masjid-v5");if(s)cfg=JSON.parse(s);}catch(e){}
 // Backward compatibility: ensure new properties exist
 if(!cfg.durasiIqamah)cfg.durasiIqamah={subuh:10,dzuhur:10,ashar:10,maghrib:10,isya:10};
