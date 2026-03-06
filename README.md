@@ -2698,5 +2698,15 @@ if(cfg.gps.lat&&cfg.gps.lastFetch){
 // Keyboard
 document.addEventListener("keydown",e=>{const ao=document.getElementById("admin-overlay").classList.contains("show"),so=document.getElementById("settings-modal").classList.contains("show");if(e.key==="Escape"){closeAdmin();closeSettings();closeEdit();return;}if(!ao&&!so){if(e.key==="f"||e.key==="F11"){if(!document.fullscreenElement)document.documentElement.requestFullscreen().catch(()=>{});else document.exitFullscreen();}if(e.key==="ArrowRight")goToSlide(curSlide+1,true);if(e.key==="ArrowLeft")goToSlide(curSlide-1,true);if(e.key==="ArrowUp")nextHadist();}});
 </script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Cari elemen h1 atau header yang berisi teks tersebut dan sembunyikan
+    var elements = document.querySelectorAll('h1, header, .project-name');
+    elements.forEach(function(el) {
+      if (el.innerText.includes('masjid-al-mujahidin')) {
+        el.style.display = 'none';
+      }
+    });
+  });
+</script>
 </body>
 </html>
