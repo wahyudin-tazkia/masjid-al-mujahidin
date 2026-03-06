@@ -4,6 +4,17 @@
 <title>Display Masjid Al-Mujahidin</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Nunito:wght@400;600;700;800;900&family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;600;700;900&family=Montserrat:wght@400;600;700;800;900&family=Merriweather:wght@400;700;900&family=Cinzel:wght@400;600;700;900&family=Poppins:wght@400;600;700;800;900&family=Oswald:wght@400;600;700&family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
+  <style>
+  /* Menghilangkan judul bawaan tema GitHub */
+  header, .project-name, .page-header {
+    display: none !important;
+  }
+  
+  /* Jika Anda ingin menghilangkan area hitam/biru di paling atas */
+  section.page-header {
+    padding: 0 !important;
+  }
+</style>
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Nunito',sans-serif;background:#111;width:100vw;height:100vh;overflow:hidden;}
 .screen{width:100vw;height:100vh;position:relative;display:flex;flex-direction:column;overflow:hidden;}
